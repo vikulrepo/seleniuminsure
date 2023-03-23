@@ -21,7 +21,7 @@ public class App {
 		chromeOptions.addArguments(new String[] { "--no-sandbox" });
 		chromeOptions.addArguments(new String[] { "--disable-dev-shm-usage" });
 		final WebDriver driver = (WebDriver) new ChromeDriver(chromeOptions);
-		driver.get("http://13.127.168.14:8084/contact.html");
+		driver.get("http://65.2.178.224:8084/contact.html");
 		driver.manage().timeouts().implicitlyWait(5L, TimeUnit.SECONDS);
 		driver.findElement(By.id("inputName")).sendKeys(new CharSequence[] { "Vikul" });
 		driver.findElement(By.id("inputNumber")).sendKeys(new CharSequence[] { "9999999999" });
